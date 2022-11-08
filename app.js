@@ -2,6 +2,8 @@ var express = require('express');
 var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
+require('./models/connection');
+const Trip = require('./models/trips');
 
 const cors = require('cors');
 app.use(cors());
